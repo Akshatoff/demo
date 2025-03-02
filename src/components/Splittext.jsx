@@ -1,7 +1,7 @@
 import { useSprings, animated } from '@react-spring/web';
 import { useEffect, useRef, useState } from 'react';
 
-const SplitText = ({
+const splitText = ({
   text = '',
   className = '',
   delay = 100,
@@ -83,4 +83,4 @@ const SplitText = ({
   );
 };
 
-export default SplitText;
+export default splitText;

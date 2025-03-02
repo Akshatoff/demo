@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import SplitText from "./Splittext";
+import SplitText from "./splittext";
 
 const cards = [" ", " ", " ", " ", " ", " ", " "];
 
-export default function Home() {
+export default function home() {
   const [isRevealed, setIsRevealed] = useState(false);
   const [hasMovedUp, setHasMovedUp] = useState(false);
-  const [startAnimation, setStartAnimation] = useState(false); // Ensure animation runs once
+  const [startAnimation, setStartAnimation] = useState(false); 
 
   const centerIndex = Math.floor(cards.length / 2);
   const gap = 120;
@@ -16,7 +16,7 @@ export default function Home() {
   const translateYValues = [0, -40, -30, -30, -33, -25, -40];
 
   useEffect(() => {
-    setStartAnimation(true); // Trigger animation after mount
+    setStartAnimation(true); 
   }, []);
 
   useEffect(() => {
@@ -38,15 +38,13 @@ export default function Home() {
         rootMargin="-50px"
       />
       <div className="container">
-        {/* Animate the entire stack first */}
         <motion.div
-          initial={{ y: "100vh" }} // Start from bottom
-          animate={startAnimation ? { y: "50vh" } : {}} // Controlled by useEffect
+          initial={{ y: "100vh" }} 
+          animate={startAnimation ? { y: "50vh" } : {}} 
           transition={{ duration: 1, ease: "easeOut" }}
           onAnimationComplete={() => {
-            setTimeout(() => setHasMovedUp(true), 100); // Delay to avoid re-renders affecting animation
+            setTimeout(() => setHasMovedUp(true), 100); 
           }}
-          onUpdate={(latest) => console.log("Stack Animation Progress:", latest.y)} // Debug animation skips
           className="first"
           style={{ position: "relative" }}
         >
