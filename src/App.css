@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coming+Soon&family=Montserrat&family=Montserrat+Alternates&family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+
+/* font-family: 'Bebas Neue', sans-serif;
+font-family: 'Coming Soon', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body,
+html {
+width: 100%;
+height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.heading {
+  color: black;
+  font-size: 5rem;
+  text-align: center;
+  width: 100%;
+  max-width: 55rem;
+  position: absolute;
+  top: 5vh; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.sub {
+  color: black;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 55rem;
+  position: absolute;
+  top: 80vh; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Poppins', sans-serif;
+}
+.section {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh; 
+  position: relative;
+}
+
+.first {
+  position: absolute;
+  top: -50%; 
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+
+.second {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background: url("https://picsum.photos/id/11/200");
+  background-size: cover;
+  font-size: 1.2rem;
+}
+.second:nth-child(2) {
+  background: url("https://picsum.photos/id/12/200");
+}
+.second:nth-child(3) {
+  background: url("https://picsum.photos/id/13/200");
+}
+.second:nth-child(4) {
+  background: url("https://picsum.photos/id/14/200");
+}
+.second:nth-child(5) {
+  background: url("https://picsum.photos/id/15/200");
+}
+.second:nth-child(6) {
+  background: url("https://picsum.photos/id/16/200");
+}
+.second:nth-child(7) {
+  background: url("https://picsum.photos/id/17/200");
+}
+
+.btn-container {
+  color: black;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 55rem;
+  position: absolute;
+  top: 90vh; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+  justify-content: center ;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 40px;
+  font-weight: 200;
+  transition: all 200ms ease-in-out;
+}
+
+.btn:hover {
+  background: transparent;
+  color: rgb(19, 19, 19);
+  border: 2px solid rgb(19, 19, 19);
+}
+
+.tran {
+  background: transparent;
+  color: black;
+}
