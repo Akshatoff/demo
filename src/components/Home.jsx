@@ -4,7 +4,7 @@ import SplitText from "./splittext";
 
 const cards = [" ", " ", " ", " ", " ", " ", " "];
 
-export default function home() {
+export default function Home() {
   const [isRevealed, setIsRevealed] = useState(false);
   const [hasMovedUp, setHasMovedUp] = useState(false);
   const [startAnimation, setStartAnimation] = useState(false); 
